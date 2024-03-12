@@ -24,6 +24,9 @@ GameModeConfig.button_remapping max_count:60
 GameModeConfig.activation_binding max_count:4
 GameModeConfig.keyboard_mode_config int_size:IS_8
 GameModeConfig.rgb_config int_size:IS_8
+GameModeConfig.layout_plate int_size:IS_8
+GameModeConfig.applicable_backends max_count:10
+GameModeConfig.applicable_backends int_size:IS_8
 
 CustomModeConfig.id int_size:IS_8
 CustomModeConfig.digital_button_mappings max_count:18
