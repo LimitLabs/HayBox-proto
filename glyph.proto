@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-import ".pio/libdeps/glyph/HayBox-proto/config.proto";
+import public ".pio/libdeps/glyph/HayBox-proto/config.proto";
 
 enum LayoutPlate {
   LAYOUT_PLATE_UNSPECIFIED = 0;

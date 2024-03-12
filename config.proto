@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-import "enums.proto";
+import public "enums.proto";
 
 message ButtonRemap {
   optional Button physical_button = 1;
