@@ -229,8 +229,8 @@ message GameModeConfig {
   uint32 custom_mode_config = 6;
   uint32 keyboard_mode_config = 7;
   uint32 rgb_config = 8;
-  LayoutPlate layout_plate = 1000;
-  repeated CommunicationBackendId applicable_backends = 1001;
+  LayoutPlate layout_plate = 200;
+  repeated CommunicationBackendId applicable_backends = 201;
 }
 
 message CommunicationBackendConfig {
