@@ -68,3 +68,8 @@ SocdType long_names:false
 GameModeId long_names:false
 CommunicationBackendId long_names:false
 RgbAnimationId long_names:false
+
+GameModeConfig.layout_plate int_size:IS_8
+GameModeConfig.applicable_backends max_count:10
+GameModeConfig.applicable_backends int_size:IS_8
+LayoutPlate long_names:false
