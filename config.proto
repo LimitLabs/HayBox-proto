@@ -171,6 +171,14 @@ enum ModifierCombinationMode {
   COMBINATION_MODE_OVERRIDE = 2;
 };
 
+enum LayoutPlate {
+  LAYOUT_PLATE_UNSPECIFIED = 0;
+  LAYOUT_PLATE_EVERYTHING = 1;
+  LAYOUT_PLATE_FGC = 2;
+  LAYOUT_PLATE_SPLIT_FGC = 3;
+  LAYOUT_PLATE_PLATFORM_FIGHTER = 4;
+}
+
 message ButtonRemap {
   Button physical_button = 1;
   Button activates = 2;
@@ -228,6 +236,8 @@ message GameModeConfig {
   uint32 custom_mode_config = 6;
   uint32 keyboard_mode_config = 7;
   uint32 rgb_config = 8;
+  LayoutPlate layout_plate = 200;
+  repeated CommunicationBackendId applicable_backends = 201;
 }
 
 message CommunicationBackendConfig {
