@@ -179,6 +179,12 @@ enum LayoutPlate {
   LAYOUT_PLATE_PLATFORM_FIGHTER = 4;
 }
 
+enum DashboardOption {
+  DASHBOARD_UNSPECIFIED = 0;
+  DASHBOARD_MENU_BUTTON_HINTS = 1;
+  DASHBOARD_INPUT_VIEWER = 2;
+}
+
 message ButtonRemap {
   Button physical_button = 1;
   Button activates = 2;
@@ -263,6 +269,7 @@ message Config {
   uint32 default_backend_config = 6;
   uint32 default_usb_backend_config = 7;
   uint32 rgb_brightness = 8;
+  uint32 default_dashboard_option = 200;
 }
 
 message DeviceInfo {
