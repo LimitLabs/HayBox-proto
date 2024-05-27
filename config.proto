@@ -269,7 +269,7 @@ message Config {
   uint32 default_backend_config = 6;
   uint32 default_usb_backend_config = 7;
   uint32 rgb_brightness = 8;
-  uint32 default_dashboard_option = 200;
+  DashboardOption default_dashboard_option = 200;
 }
 
 message DeviceInfo {
