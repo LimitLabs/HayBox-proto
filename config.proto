@@ -140,6 +140,12 @@ enum GameModeId {
   // Custom gamemode - a [GameModeConfig](#gamemodeconfig) using this mode id must set
   // GameModeConfig.custom_mode_config to reference a [CustomModeConfig](#custommodeconfig).
   MODE_CUSTOM = 7;
+  // Built-in 64 mode
+  MODE_64 = 8;
+  // Built-in Rivals 2 mode.
+  MODE_RIVALS2 = 9;
+  //number of enum members
+  MODE_NUM_VALUES = 10;
 }
 
 /**
@@ -179,6 +185,57 @@ enum RgbAnimationId {
   RGB_ANIM_STATIC = 1;          // Static - no animation.
   RGB_ANIM_BREATHE = 2;         // Simple "breathing" (fade in, fade out) animation.
   RGB_ANIM_REACTIVE_SIMPLE = 3; // Per-key reactive LED (keys light up when pressed).
+  RGB_ANIM_RAINBOW_SHIFT = 4;
+  RGB_ANIM_RAINBOW_XWAVE_LEFT = 5;
+}
+
+enum OutputOption {
+  OUT_UNSPECIFIED = 0;   // Invalid output.
+  OUT_A = 1;          
+  OUT_B = 2;          
+  OUT_X = 3;            
+  OUT_Y = 4;          
+  OUT_LB = 5;           
+  OUT_RB = 6;            
+  OUT_LT = 7;           
+  OUT_RT = 8;            
+  OUT_START = 9;        
+  OUT_SELECT = 10;       
+  OUT_HOME = 11;        
+  OUT_SW_CAPTURE = 12;      
+  OUT_SHARE = 13;      
+  OUT_DPAD_DOWN = 14;   
+  OUT_DPAD_LEFT = 15;   
+  OUT_DPAD_RIGHT = 16;  
+  OUT_DPAD_UP = 17; 
+  OUT_L3 = 18; 
+  OUT_R3 = 19; 
+  OUT_TP = 20;
+  OUT_TRIANGLE = 21;
+  OUT_SQUARE = 22;
+  OUT_CIRCLE = 23;
+  OUT_Z = 24;
+  OUT_ZL = 25;
+  OUT_ZR = 26;
+  OUT_LS_LEFT = 27;
+  OUT_LS_RIGHT = 28;
+  OUT_LS_UP = 29;
+  OUT_LS_DOWN = 30;
+  OUT_RS_LEFT = 31;
+  OUT_RS_RIGHT = 32;
+  OUT_RS_UP = 33;
+  OUT_RS_DOWN = 34;
+  OUT_CS_LEFT = 35;
+  OUT_CS_RIGHT = 36;
+  OUT_CS_UP = 37;
+  OUT_CS_DOWN = 38;
+  OUT_PLUS = 39;
+  OUT_MINUS = 40;
+  OUT_MENU = 41;
+  OUT_L = 42;
+  OUT_R = 43;
+  OUT_XB_START = 44;
+  OUT_XB_BACK = 45;
 }
 
 /**
@@ -451,6 +508,7 @@ message GameModeConfig {
   uint32 rgb_config = 8;
   LayoutPlate layout_plate = 200;
   repeated CommunicationBackendId applicable_backends = 201;
+  repeated OutputOption menu_button_icon = 202;
 }
 
 /**
